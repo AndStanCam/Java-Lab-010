@@ -28,6 +28,8 @@ public class ForecastDisplay implements Display {
     public void update() {
         this.lastPressure = this.currentPressure;
         this.currentPressure = ws.getPressure();
+
+        display(); // pretty sure it should be here
     }
 
     // It's display method should use the following algorithm to provide a forecast.

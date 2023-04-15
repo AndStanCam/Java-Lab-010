@@ -41,6 +41,8 @@ public class StatisticsDisplay implements Display {
         }
         this.temperatureTotal += newTemp;
         this.numReadings++;
+
+        display(); // You had this called in the other update()s and it makes sense so
     }
 
     /*
